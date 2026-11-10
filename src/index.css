@@ -1,0 +1,33 @@
+:root { --ink: #1b2433; --muted: #5b6b80; --line: #d5dbe6; --bg: #f4f6fa; --accent: #3b5bdb; }
+
+* { box-sizing: border-box; }
+
+body { margin: 0; font-family: system-ui, sans-serif; background: var(--bg); color: var(--ink); }
+
+main { max-width: 960px; margin: 0 auto; padding: 1rem; }
+
+header { padding: 1rem 0; border-bottom: 2px solid var(--accent); margin-bottom: 1.5rem; }
+
+header h1 { margin: 0; }
+
+header p { margin: .25rem 0 0; color: var(--muted); }
+
+section { background: #fff; border-radius: 12px; padding: 1rem 1.25rem; margin-bottom: 1.5rem; }
+
+section > h2 { margin-top: 0; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 1rem; }
+
+.card { border: 1px solid var(--line); border-radius: 10px; padding: 1rem; background: #fff; }
+
+.card h3 { margin: .25rem 0 .5rem; font-size: 1.05rem; }
+
+.code { font-size: .8rem; font-weight: 700; color: var(--accent); letter-spacing: .06em; }
+
+.meta { color: var(--muted); font-size: .9rem; margin: 0 0 .5rem; }
+
+.badge { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: .8rem; }
+
+.done { background: #d9f5e3; color: #11663a; }
+
+.todo { background: #fff0cf; color: #7a5200; }
