@@ -1,7 +1,11 @@
 
 import CourseCard from './CourseCard.jsx'
 
-export default function CourseList({ courses }) {
+export default function CourseList({
+  courses,
+  enrolledCodes,
+  onToggleEnrol,
+}) {
   return (
     <div className="grid">
       {courses.map((c) => (
@@ -12,6 +16,8 @@ export default function CourseList({ courses }) {
           credits={c.credits}
           level={c.level}
           completed={c.completed}
+          enrolled={enrolledCodes.includes(c.code)}
+          onToggleEnrol={onToggleEnrol}
         />
       ))}
     </div>

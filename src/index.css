@@ -31,3 +31,11 @@ section > h2 { margin-top: 0; }
 .done { background: #d9f5e3; color: #11663a; }
 
 .todo { background: #fff0cf; color: #7a5200; }
+button { cursor: pointer; }
+.struck { text-decoration: line-through; color: var(--muted); }
+.error { color: #8a1c1c; }
+.filters { margin: .75rem 0; display: flex; gap: .5rem; }
+blockquote { margin: 0; padding-left: 1rem; border-left: 4px solid var(-
+accent); font-style: italic; }
+blockquote footer { font-style: normal; color: var(--muted); margin-top: .25rem; 
+}

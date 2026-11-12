@@ -1,4 +1,14 @@
-export default function CourseCard({ code, title, credits, level, completed }) {
+
+export default function CourseCard({
+  code,
+  title,
+  credits,
+  level,
+  completed,
+  enrolled,
+  onToggleEnrol,
+}) {
+  
   return (
     <article className="card">
       <span className="code">{code}</span>
@@ -12,6 +22,9 @@ export default function CourseCard({ code, title, credits, level, completed }) {
       <span className={completed ? 'badge done' : 'badge todo'}>
         {completed ? 'Completed' : 'In progress'}
       </span>
+      <button onClick={() => onToggleEnrol(code)}>
+  {enrolled ? 'Unenrol' : 'Enrol'}
+</button>
     </article>
   )
 }
